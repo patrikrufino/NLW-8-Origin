@@ -6,8 +6,8 @@
 }
 
 :root {
-  --hue: 209;
-  --primary-color: hsl(var(--hue), 100%, 26%);
+  --hue: 267;
+  --primary-color: hsl(var(--hue), 28%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
 
@@ -20,7 +20,7 @@
 
   font-size: 62.5%; /* 1rem = 10px */
 
-  --nav-height: 7.2rem;
+  --nav-height: 8.2rem;
 }
 
 html {
@@ -45,6 +45,15 @@ body {
   background-color: var(--bg-light);
 }
 
+.ico-card {
+  width: 4.8rem;
+}
+
+.logo {
+  width: 12.6rem;
+  height: 3.1rem;
+}
+
 .wrapper {
   width: min(50rem, 100%);
   margin-inline: auto;
@@ -57,6 +66,7 @@ ul {
 
 img {
   max-width: 100%;
+  border-radius: 0.8rem
 }
 
 section {
@@ -279,10 +289,6 @@ body.menu-expanded .logo,
 body.menu-expanded button {
   position: relative;
   z-index: 100;
-}
-
-body.menu-expanded .logo path {
-  fill: white;
 }
 
 body.menu-expanded button path {
@@ -725,7 +731,7 @@ footer .social-links {
   footer {
     padding-block: 8rem;
   }
-  
+
   footer .wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'A B';
